@@ -1,4 +1,4 @@
-# 💍 Wedding Website & RSVP System ([Live demo](https://example.com))
+# 💍 Wedding Website & RSVP System ([Live demo](https://wedding-website-seven-teal.vercel.app/))
 Detta projekt är en modern bröllopshemsida skapad för att samla all praktisk information inför den stora dagen på ett ställe. Gäster kan läsa om bröllopet, osa digitalt och skicka in boendeönskemål.
 
 ## ✨ Funktionalitet
@@ -38,4 +38,4 @@ Lagring: Scriptet skriver in informationen på en ny rad i ett Google Kalkylark.
 
 Bekräftelse: Vid OSA triggas EmailJS för att skicka ett snyggt bekräftelsemail till gästens e-postadress.
 
-## [Live demo](https://example.com)
+## [Live demo](https://wedding-website-seven-teal.vercel.app/)
