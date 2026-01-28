@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+/* adding custom colors!!! */
+
+@theme {
+  --color-custom-red: #ac020a;
+  --color-custom-pink: #ffb7c5;
+  --color-custom-white: #f9f5f2;
+  --font-script: 'Dancing Script', cursive;
+  --font-lora: 'Lora', serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+  --font-garamond: 'EB Garamond', serif;
+  --font-gloria: 'Gloria Hallelujah', cursive;
+  --font-shadow-light: 'Shadows Into Light', cursive;
+  --font-caveat: 'Caveat', cursive;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Root variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-quicksand);
+  cursor:
+    url('/heart.png') 16 16,
+    auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-script);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+ul.info-list {
+  list-style: none;
+}
+
+ul.info-list li:before {
+  content: '♡ ';
+  color: var(--color-custom-red);
+}
