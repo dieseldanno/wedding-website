@@ -38,4 +38,18 @@ Lagring: Scriptet skriver in informationen på en ny rad i ett Google Kalkylark.
 
 Bekräftelse: Vid OSA triggas EmailJS för att skicka ett snyggt bekräftelsemail till gästens e-postadress.
 
+## 🔐 Miljövariabler
+För att projektet ska fungera lokalt behöver du skapa en .env fil och lägga till följande variabler (se till att denna fil är med i din .gitignore):
+
+Kodavsnitt
+```env
+# EmailJS
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+
+# Google Integration
+NEXT_PUBLIC_GOOGLE_SCRIPT_URL=your_apps_script_web_app_url
+```
+
 ## [Live demo](https://wedding-website-seven-teal.vercel.app/)
